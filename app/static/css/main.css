@@ -1,0 +1,200 @@
+html {
+    font-family: Charter, Georgia, serif;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+a {
+    text-decoration: underline black;  
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card-lesson {    
+    width: 100%;
+    margin: auto;
+    padding: 15px;     
+    width: 100%;    
+    text-align: center;
+    background-color: rgba(12, 242, 143, .2);
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;    
+}
+
+.footer {
+    height: 200px;
+    background-color: #37474f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    margin: 0;
+}
+/*Estilo del nav*/
+.topnav {       
+    padding: 10px;
+    overflow: hidden;
+    background-color: #263238 ;
+}
+
+.topnav a { 
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.topnav a:hover {
+    background-color: #37474f;
+    color: white;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+/**/
+
+.introduction-div {
+    margin: auto;
+    width: 60%;        
+    font-size: 22px;
+    line-height: 32px;
+    text-align: left;
+}
+
+/* Estilo de los titulos */
+.h1-title {
+    text-align: left;
+    font-size: 40px;
+    font-family: Times, serif; 
+    line-height: 40px; 
+    font-weight: 400;
+}
+
+.h3-title {
+    line-height: 32px; 
+    font-size: 24px;     
+    font-weight: 500; font-family: Times, serif;
+}
+/* Fin stilo de los titulos */
+.container{
+    width: 100%;
+}
+.div-letra-alfabeto{
+    background-color: #eceff1;
+    padding: 5px;
+    margin: 2px;
+    float: left;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 22px;     
+}
+blockquote{
+    background-color: #eceff1; 
+    box-shadow: rgba(0, 0, 0, 0.84) 3px 0px 0px 0px inset; 
+    padding-left: 23px; 
+    font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif; 
+    font-style: italic;
+}
+.color-div{    
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    width: 24%;
+    float: left;
+    text-align: center;
+}
+
+/* para celulares */
+[class*="col-"] {
+    padding: 5px;
+    float: left;
+    width: 100%;
+}
+    
+/* para tabletas */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+    
+/*  para navegadores */
+@media only screen and (min-width: 768px) {  
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/* TopNav responsive*/
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;    
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .introduction-div {
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .h3-title {
+        font-size: 18px;
+    }
+
+    .color-div{    
+        font-size: 18px;
+        margin: 2px;
+        width: 40%;
+
+    }    
+}

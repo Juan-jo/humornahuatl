@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <meta name="lang" content="es-ES" />
+    <meta name="application-name" content="Humor Náhuatl" />
+    <meta name="author" content="Juan Jose HM" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Humor Náhuatl</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script data-main="scripts/main" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+    <a class="active" href="/"><i class="fa fa-fw fa-home"></i>Humor Náhuatl</a>
+    <a style="float:right" href="/contacto">Contacto</a>
+    <a style="float:right" href="/blog">Blog</a>    
+    <a href="javascript:void(0);" class="icon" onclick="funTopNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="introduction-div">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>
