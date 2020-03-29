@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+
+  humornahuatl:
+    build: ./app
+    container_name: humor-nahuatl
+    restart: always
+    environment:
+      - APP_NAME=HumorNahuatl
+    expose:
+      - 8080
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+        - "80:80"
