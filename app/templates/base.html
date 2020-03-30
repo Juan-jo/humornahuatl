@@ -14,18 +14,27 @@
 </head>
 
 <body>
-<div class="topnav" id="myTopnav">
-    <a class="active" href="/"><i class="fa fa-fw fa-home"></i>Humor Náhuatl</a>
-    <a style="float:right" href="/contacto">Contacto</a>
-    <a style="float:right" href="/blog">Blog</a>    
-    <a href="javascript:void(0);" class="icon" onclick="funTopNav()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="/"><i class="fa fa-fw fa-home"></i>Humor Náhuatl</a>
+        <a style="float:right" href="/contacto">Contacto</a>
+        <a style="float:right" href="/blog">Blog</a>    
+        <a href="javascript:void(0);" class="icon" onclick="funTopNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
-<div class="introduction-div">
-    {% block content %}
-    {% endblock %}
-</div>
+    <div class="introduction-div">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div style="text-align: center; padding: 20px;">
+        <a href="https://www.facebook.com/HumorNahuatl1">Siguenos en facebook</a>
+    </div>
+    
+    <div class="footer">
+      <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+
 </body>
 </html>
