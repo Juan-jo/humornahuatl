@@ -1,18 +1,6 @@
-version: "3.3"
+version: "3"
 
 services:
-  nginx-proxy:
-    image: jwilder/nginx-proxy
-    restart: always
-    ports:
-      - "80:80"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-    links:
-      - nginx
-  
-
-    ## create application      
   humornahuatl:
     build: ./app
     container_name: humor-nahuatl
@@ -21,13 +9,11 @@ services:
       - APP_NAME=HumorNahuatl
     expose:
       - 8080
-
-      # create server nginx
+      
   nginx:
-    build: ./nginx
-    container_name: nginx
+    image: nginx
     restart: always
-    expose:
-      - "80"
-    environment:
-      - VIRTUAL_HOST=humornahuatl.com,www.humornahuatl.com
+    ports: 
+      - "80:80"
+    volumes: 
+      - ./chatbot:/usr/share/nginx/html:ro
